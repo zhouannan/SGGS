@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="SGGS: Semantic-Guided 3D Gaussian Splatting with Adaptive Rendering">
+  <meta name="description" content="SGGS: Semantic-Guided 3D Gaussian Splatting with Adaptive Rendering">
   <meta name="keywords" content="3DGS, LoD, Semantic Segmentation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SGGS: Semantic-Guided 3D Gaussian Splatting with Adaptive Rendering</title>
@@ -22,15 +22,13 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
 
@@ -40,17 +38,18 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <!-- <div class="navbar-menu">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <!-- <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
       <a class="navbar-item" href="https://keunhong.com">
       <span class="icon">
@@ -80,17 +79,18 @@
     </div>
 
   </div> -->
-</nav>
+  </nav>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">SGGS: Semantic-Guided 3D Gaussian Splatting with Adaptive Rendering</h1>
-          <div class="is-size-5 publication-authors">
-            <!-- <span class="author-block">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">SGGS: Semantic-Guided 3D Gaussian Splatting with Adaptive Rendering
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- <span class="author-block">
               <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
@@ -109,36 +109,34 @@
             <span class="author-block">
               <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
             </span> -->
-          </div>
+            </div>
 
-          <div class="is-size-5 publication-authors">
-            <!-- <span class="author-block"><sup>1</sup>University of Washington,</span>
+            <div class="is-size-5 publication-authors">
+              <!-- <span class="author-block"><sup>1</sup>University of Washington,</span>
             <span class="author-block"><sup>2</sup>Google Research</span> -->
-          </div>
+            </div>
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <!-- <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -147,18 +145,17 @@
                   <span>Video</span>
                 </a>
               </span> -->
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/zhouannan/SGGS"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/zhouannan/SGGS" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
+                    </span>
+                    <span>Code</span>
                   </a>
-              </span>
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
+                </span>
+                <!-- Dataset Link. -->
+                <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -166,16 +163,16 @@
                   </span>
                   <span>Data</span>
                   </a> -->
-            </div>
+              </div>
 
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- <section class="hero teaser">
+  <!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
@@ -250,23 +247,34 @@
 </section> -->
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            3D Gaussian Splatting (3DGS) has shown great promise in a variety of applications due to its exceptional real-time rendering quality and explicit representation, leading to numerous improvements across various fields. However, existing methods lack consideration of main objects and important structural information in their overall optimization strategies. This results in blurring of main objects in adaptive rendering and the loss of high-frequency details under sparse viewpoints. In this work, we introduce a semantic-guided 3DGS method with adaptive rendering, which optimizes important structures through the guidance of boundary Gaussians, while leveraging semantic features to enhance the rendering of main objects in adaptive rendering. Experiments show that the proposed semantic-guided method can enhance important structures and high-frequency information under sparse viewpoint coverage without significantly increasing the total number of Gaussians. At the same time, a semantic-guided Level-of-Detail (LoD) rendering approach enables the rapid display of main targets and the rendering of a complete scene. The semantic-guided methodology we have presented exhibits compatibility with a range of existing techniques.
-          </p>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              3D Gaussian Splatting (3DGS) has shown great promise in a variety of applications due to its exceptional
+              real-time rendering quality and explicit representation, leading to numerous improvements across various
+              fields. However, existing methods lack consideration of main objects and important structural information
+              in their overall optimization strategies. This results in blurring of main objects in adaptive rendering
+              and the loss of high-frequency details under sparse viewpoints. In this work, we introduce a
+              semantic-guided 3DGS method with adaptive rendering, which optimizes important structures through the
+              guidance of boundary Gaussians, while leveraging semantic features to enhance the rendering of main
+              objects in adaptive rendering. Experiments show that the proposed semantic-guided method can enhance
+              important structures and high-frequency information under sparse viewpoint coverage without significantly
+              increasing the total number of Gaussians. At the same time, a semantic-guided Level-of-Detail (LoD)
+              rendering approach enables the rapid display of main targets and the rendering of a complete scene. The
+              semantic-guided methodology we have presented exhibits compatibility with a range of existing techniques.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <!--/ Abstract. -->
+      <!--/ Abstract. -->
 
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
+      <!-- Paper video. -->
+      <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -275,18 +283,54 @@
         </div>
       </div>
     </div> -->
-    <!--/ Paper video. -->
-  </div>
-</section>
+      <!--/ Paper video. -->
+    </div>
+  </section>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">LoD Visualization in Web Demo</h2>
+          <div class="columns is-multiline is-centered">
+            <div class="column is-half has-text-centered">
+              <figure class="image is-4by3">
+                <img src="./static/gif/bilbao-lod-1.gif" alt="Example 1">
+                <figcaption>Bilbao</figcaption>
+              </figure>
+            </div>
 
+            <div class="column is-half has-text-centered">
+              <figure class="image is-4by3">
+                <img src="./static/gif/flowers-lod.gif" alt="Example 2">
+                <figcaption>Flowers</figcaption>
+              </figure>
+            </div>
 
-<section class="section">
-  <div class="container is-max-desktop">
+            <div class="column is-half has-text-centered">
+              <figure class="image is-4by3">
+                <img src="./static/gif/garden-lod.gif" alt="Example 3">
+                <figcaption>Garden</figcaption>
+              </figure>
+            </div>
 
-    <div class="columns is-centered">
+            <div class="column is-half has-text-centered">
+              <figure class="image is-4by3">
+                <img src="./static/gif/Truck-lod.gif" alt="Example 4">
+                <figcaption>Truck</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="section">
+    <div class="container is-max-desktop">
 
-      <!-- Visual Effects. -->
-      <!-- <div class="column">
+      <div class="columns is-centered">
+
+        <!-- Visual Effects. -->
+        <!-- <div class="column">
         <div class="content">
           <h2 class="title is-3">Visual Effects</h2>
           <p>
@@ -299,10 +343,10 @@
           </video>
         </div>
       </div> -->
-      <!--/ Visual Effects. -->
+        <!--/ Visual Effects. -->
 
-      <!-- Matting. -->
-      <!-- <div class="column">
+        <!-- Matting. -->
+        <!-- <div class="column">
         <h2 class="title is-3">Matting</h2>
         <div class="columns is-centered">
           <div class="column content">
@@ -318,16 +362,16 @@
 
         </div>
       </div> -->
-    </div>
-    <!--/ Matting. -->
+      </div>
+      <!--/ Matting. -->
 
-    <!-- Animation. -->
-    <!-- <div class="columns is-centered">
+      <!-- Animation. -->
+      <!-- <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Animation</h2> -->
 
-        <!-- Interpolating. -->
-        <!-- <h3 class="title is-4">Interpolating states</h3>
+      <!-- Interpolating. -->
+      <!-- <h3 class="title is-4">Interpolating states</h3>
         <div class="content has-text-justified">
           <p>
             We can also animate the scene by interpolating the deformation latent codes of two input
@@ -358,10 +402,10 @@
           </div>
         </div>
         <br/> -->
-        <!--/ Interpolating. -->
+      <!--/ Interpolating. -->
 
-        <!-- Re-rendering. -->
-        <!-- <h3 class="title is-4">Re-rendering the input video</h3>
+      <!-- Re-rendering. -->
+      <!-- <h3 class="title is-4">Re-rendering the input video</h3>
         <div class="content has-text-justified">
           <p>
             Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
@@ -379,9 +423,9 @@
                     type="video/mp4">
           </video>
         </div> -->
-        <!--/ Re-rendering. -->
+      <!--/ Re-rendering. -->
 
-      </div>
+    </div>
     </div>
     <!--/ Animation. -->
 
@@ -413,11 +457,11 @@
     </div> -->
     <!--/ Concurrent Work. -->
 
-  </div>
-</section>
+    </div>
+  </section>
 
 
-<!-- <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{park2021nerfies,
@@ -430,28 +474,29 @@
 </section> -->
 
 
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            We thank the authors of <a href="https://nerfies.github.io/">Nerfies</a> that kindly open sourced the template of this website.
-          </p>
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              We thank the authors of <a href="https://nerfies.github.io/">Nerfies</a> that kindly open sourced the
+              template of this website.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>

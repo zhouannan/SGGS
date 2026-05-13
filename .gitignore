@@ -1,0 +1,38 @@
+
+Converter/bin/
+Converter/.vs/
+Converter/obj/
+Converter.vcxproj.user
+nocommit
+
+# Build and IDE generated files
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+.vs/
+
+# Local editor state
+.vscode/
+**/.vscode/
+
+# Generated conversion inputs/outputs and experiment results
+data/
+result/
+family-pgsr/
+testPly/
+testPly_compress/
+*.nxs
+
+# Compiled objects and binaries
+*.obj
+*.o
+*.lib
+*.dll
+*.exe
+*.pdb
+*.ilk
